@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "integrationsoplenty:block/hellbark_beehive_end",
+    "front": "integrationsoplenty:block/hellbark_beehive_front",
+    "particle": "integrationsoplenty:block/hellbark_beehive_side",
+    "side": "integrationsoplenty:block/hellbark_beehive_side",
+    "top": "integrationsoplenty:block/hellbark_beehive_end"
+  }
+}

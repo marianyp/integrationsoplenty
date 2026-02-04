@@ -1,0 +1,38 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "integrationsoplenty:module",
+      "module": "integrationsoplenty:farmers_delight"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "integrationsoplenty:umbran_cabinet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_umbran_trapdoor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomesoplenty:umbran_trapdoor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_umbran_trapdoor"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "integrationsoplenty:umbran_cabinet"
+    ]
+  }
+}

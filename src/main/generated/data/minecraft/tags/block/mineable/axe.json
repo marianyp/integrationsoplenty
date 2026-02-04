@@ -1,0 +1,108 @@
+{
+  "values": [
+    {
+      "id": "integrationsoplenty:dead_cabinet",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:empyreal_cabinet",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:fir_cabinet",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:hellbark_cabinet",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:jacaranda_cabinet",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:magic_cabinet",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:mahogany_cabinet",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:maple_cabinet",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:palm_cabinet",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:pine_cabinet",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:redwood_cabinet",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:umbran_cabinet",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:willow_cabinet",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:dead_beehive",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:empyreal_beehive",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:fir_beehive",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:hellbark_beehive",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:jacaranda_beehive",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:magic_beehive",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:mahogany_beehive",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:maple_beehive",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:palm_beehive",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:pine_beehive",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:redwood_beehive",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:umbran_beehive",
+      "required": false
+    },
+    {
+      "id": "integrationsoplenty:willow_beehive",
+      "required": false
+    }
+  ]
+}

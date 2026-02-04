@@ -1,0 +1,24 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "integrationsoplenty:module",
+      "module": "integrationsoplenty:farmers_delight"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "fd_cabinet",
+  "key": {
+    "S": "biomesoplenty:palm_slab",
+    "T": "biomesoplenty:palm_trapdoor"
+  },
+  "pattern": [
+    "SSS",
+    "T T",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "integrationsoplenty:palm_cabinet"
+  }
+}

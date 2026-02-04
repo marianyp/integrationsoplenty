@@ -1,0 +1,38 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "integrationsoplenty:module",
+      "module": "integrationsoplenty:farmers_delight"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dead_trapdoor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomesoplenty:dead_trapdoor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "integrationsoplenty:dead_cabinet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dead_trapdoor"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "integrationsoplenty:dead_cabinet"
+    ]
+  }
+}

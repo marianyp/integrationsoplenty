@@ -1,0 +1,24 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "integrationsoplenty:module",
+      "module": "integrationsoplenty:farmers_delight"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "fd_cabinet",
+  "key": {
+    "S": "biomesoplenty:redwood_slab",
+    "T": "biomesoplenty:redwood_trapdoor"
+  },
+  "pattern": [
+    "SSS",
+    "T T",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "integrationsoplenty:redwood_cabinet"
+  }
+}

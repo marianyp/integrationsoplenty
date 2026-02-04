@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "integrationsoplenty:block/pine_cabinet_front",
+    "side": "integrationsoplenty:block/pine_cabinet_side",
+    "top": "integrationsoplenty:block/pine_cabinet_top"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:not",
+      "value": {
+        "condition": "integrationsoplenty:module",
+        "module": "integrationsoplenty:beehives"
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": "minecraft:honeycomb",
+    "P": "#minecraft:planks"
+  },
+  "pattern": [
+    "PPP",
+    "HHH",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:beehive"
+  }
+}

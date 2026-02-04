@@ -1,0 +1,38 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "integrationsoplenty:module",
+      "module": "integrationsoplenty:farmers_delight"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_magic_trapdoor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomesoplenty:magic_trapdoor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "integrationsoplenty:magic_cabinet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_magic_trapdoor"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "integrationsoplenty:magic_cabinet"
+    ]
+  }
+}

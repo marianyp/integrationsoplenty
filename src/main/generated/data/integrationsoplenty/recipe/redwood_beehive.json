@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "integrationsoplenty:module",
+      "module": "integrationsoplenty:beehives"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": "minecraft:honeycomb",
+    "P": "biomesoplenty:redwood_planks"
+  },
+  "pattern": [
+    "PPP",
+    "HHH",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "integrationsoplenty:redwood_beehive"
+  }
+}
