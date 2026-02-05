@@ -3,6 +3,7 @@ package dev.mariany.integrationsoplenty.block;
 import biomesoplenty.api.block.BOPBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.MapColor;
+import net.minecraft.sound.BlockSoundGroup;
 
 public enum BOPWood {
     DEAD(
@@ -11,7 +12,8 @@ public enum BOPWood {
             true,
             BOPBlocks.DEAD_PLANKS,
             BOPBlocks.DEAD_SLAB,
-            BOPBlocks.DEAD_TRAPDOOR
+            BOPBlocks.DEAD_TRAPDOOR,
+            BlockSoundGroup.WOOD
     ),
 
     EMPYREAL(
@@ -20,7 +22,8 @@ public enum BOPWood {
             true,
             BOPBlocks.EMPYREAL_PLANKS,
             BOPBlocks.EMPYREAL_SLAB,
-            BOPBlocks.EMPYREAL_TRAPDOOR
+            BOPBlocks.EMPYREAL_TRAPDOOR,
+            BlockSoundGroup.NETHER_WOOD
     ),
 
     FIR(
@@ -29,7 +32,8 @@ public enum BOPWood {
             true,
             BOPBlocks.FIR_PLANKS,
             BOPBlocks.FIR_SLAB,
-            BOPBlocks.FIR_TRAPDOOR
+            BOPBlocks.FIR_TRAPDOOR,
+            BlockSoundGroup.WOOD
     ),
 
     HELLBARK(
@@ -38,7 +42,8 @@ public enum BOPWood {
             false,
             BOPBlocks.HELLBARK_PLANKS,
             BOPBlocks.HELLBARK_SLAB,
-            BOPBlocks.HELLBARK_TRAPDOOR
+            BOPBlocks.HELLBARK_TRAPDOOR,
+            BlockSoundGroup.NETHER_WOOD
     ),
 
     JACARANDA(
@@ -47,7 +52,8 @@ public enum BOPWood {
             true,
             BOPBlocks.JACARANDA_PLANKS,
             BOPBlocks.JACARANDA_SLAB,
-            BOPBlocks.JACARANDA_TRAPDOOR
+            BOPBlocks.JACARANDA_TRAPDOOR,
+            BlockSoundGroup.CHERRY_WOOD
     ),
 
     MAGIC(
@@ -56,7 +62,8 @@ public enum BOPWood {
             true,
             BOPBlocks.MAGIC_PLANKS,
             BOPBlocks.MAGIC_SLAB,
-            BOPBlocks.MAGIC_TRAPDOOR
+            BOPBlocks.MAGIC_TRAPDOOR,
+            BlockSoundGroup.CHERRY_WOOD
     ),
 
     MAHOGANY(
@@ -65,7 +72,8 @@ public enum BOPWood {
             true,
             BOPBlocks.MAHOGANY_PLANKS,
             BOPBlocks.MAHOGANY_SLAB,
-            BOPBlocks.MAHOGANY_TRAPDOOR
+            BOPBlocks.MAHOGANY_TRAPDOOR,
+            BlockSoundGroup.WOOD
     ),
 
     MAPLE(
@@ -74,7 +82,8 @@ public enum BOPWood {
             true,
             BOPBlocks.MAPLE_PLANKS,
             BOPBlocks.MAPLE_SLAB,
-            BOPBlocks.MAPLE_TRAPDOOR
+            BOPBlocks.MAPLE_TRAPDOOR,
+            BlockSoundGroup.CHERRY_WOOD
     ),
 
     PALM(
@@ -83,7 +92,8 @@ public enum BOPWood {
             true,
             BOPBlocks.PALM_PLANKS,
             BOPBlocks.PALM_SLAB,
-            BOPBlocks.PALM_TRAPDOOR
+            BOPBlocks.PALM_TRAPDOOR,
+            BlockSoundGroup.WOOD
     ),
 
     PINE(
@@ -92,7 +102,8 @@ public enum BOPWood {
             true,
             BOPBlocks.PINE_PLANKS,
             BOPBlocks.PINE_SLAB,
-            BOPBlocks.PINE_TRAPDOOR
+            BOPBlocks.PINE_TRAPDOOR,
+            BlockSoundGroup.WOOD
     ),
 
     REDWOOD(
@@ -101,7 +112,8 @@ public enum BOPWood {
             true,
             BOPBlocks.REDWOOD_PLANKS,
             BOPBlocks.REDWOOD_SLAB,
-            BOPBlocks.REDWOOD_TRAPDOOR
+            BOPBlocks.REDWOOD_TRAPDOOR,
+            BlockSoundGroup.WOOD
     ),
 
     UMBRAN(
@@ -110,7 +122,8 @@ public enum BOPWood {
             true,
             BOPBlocks.UMBRAN_PLANKS,
             BOPBlocks.UMBRAN_SLAB,
-            BOPBlocks.UMBRAN_TRAPDOOR
+            BOPBlocks.UMBRAN_TRAPDOOR,
+            BlockSoundGroup.NETHER_WOOD
     ),
 
     WILLOW(
@@ -119,7 +132,8 @@ public enum BOPWood {
             true,
             BOPBlocks.WILLOW_PLANKS,
             BOPBlocks.WILLOW_SLAB,
-            BOPBlocks.WILLOW_TRAPDOOR
+            BOPBlocks.WILLOW_TRAPDOOR,
+            BlockSoundGroup.WOOD
     );
 
     private final String prefix;
@@ -128,14 +142,24 @@ public enum BOPWood {
     private final Block plank;
     private final Block slab;
     private final Block trapdoor;
+    private final BlockSoundGroup blockSoundGroup;
 
-    BOPWood(String prefix, MapColor mapColor, boolean burnable, Block plank, Block slab, Block trapdoor) {
+    BOPWood(
+            String prefix,
+            MapColor mapColor,
+            boolean burnable,
+            Block plank,
+            Block slab,
+            Block trapdoor,
+            BlockSoundGroup blockSoundGroup
+    ) {
         this.prefix = prefix;
         this.mapColor = mapColor;
         this.burnable = burnable;
         this.plank = plank;
         this.slab = slab;
         this.trapdoor = trapdoor;
+        this.blockSoundGroup = blockSoundGroup;
     }
 
     public String id(String baseName) {
@@ -160,5 +184,9 @@ public enum BOPWood {
 
     public Block getTrapdoor() {
         return this.trapdoor;
+    }
+
+    public BlockSoundGroup getBlockSoundGroup() {
+        return this.blockSoundGroup;
     }
 }

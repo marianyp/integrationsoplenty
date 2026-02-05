@@ -119,6 +119,7 @@ public record BOPBlockSet(
     }
 
     private static AbstractBlock.Settings addDynamicSettings(BOPWood wood, AbstractBlock.Settings settings) {
+        settings.sounds(wood.getBlockSoundGroup());
         settings.mapColor(wood.getMapColor());
 
         if (wood.isBurnable()) {
