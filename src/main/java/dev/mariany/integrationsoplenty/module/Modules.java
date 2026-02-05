@@ -19,13 +19,21 @@ public class Modules {
 
     private static final Map<Identifier, Module> MAP = new HashMap<>();
 
-    public static final Module BEEHIVES = register("beehives", () -> true);
-    public static final Module FARMERS_DELIGHT = register(
+    public static final Module BEEHIVES = register("beehives");
+    public static final Module FARMERS_DELIGHT = registerWithDependency(
             "farmers_delight",
-            () -> FabricLoader.getInstance().isModLoaded("farmersdelight")
+            "farmersdelight"
     );
 
     private Modules() {
+    }
+
+    private static Module registerWithDependency(String name, String requiredMod) {
+        return register(name, () -> FabricLoader.getInstance().isModLoaded(requiredMod));
+    }
+
+    private static Module register(String name) {
+        return register(name, () -> true);
     }
 
     private static Module register(String name, BooleanSupplier rawSupplier) {
