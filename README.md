@@ -18,5 +18,5 @@ Integrations O' Plenty aims to add Biomes O' Plenty integrations for various Fab
 
 ### 📜 Credits
 
-- Inspired by [Compat O' Plenty](https://www.curseforge.com/minecraft/mc-mods/compat-o-plenty) from [tdstress](https://www.curseforge.com/members/tdstress).
-- Textures by [MiteBeMana](https://www.curseforge.com/members/mitebemana)
+- Inspired by [Compat O' Plenty](https://www.curseforge.com/minecraft/mc-mods/compat-o-plenty) from [MiteBeMana](https://www.curseforge.com/members/mitebemana).
+- Textures by [tdstress](https://www.curseforge.com/members/tdstress)
