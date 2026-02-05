@@ -10,8 +10,6 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 
 import java.util.EnumMap;
-import java.util.List;
-import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -65,11 +63,6 @@ public record BOPBlockSet(
                 this.umbran,
                 this.willow
         );
-    }
-
-    public Block getRandom() {
-        List<Block> blocks = this.getAll();
-        return blocks.get(ThreadLocalRandom.current().nextInt(blocks.size()));
     }
 
     public void forEach(Consumer<Block> consumer) {

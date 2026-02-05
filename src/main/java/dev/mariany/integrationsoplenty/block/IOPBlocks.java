@@ -21,7 +21,9 @@ import net.minecraft.text.Text;
 import net.minecraft.world.poi.PointOfInterestType;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -39,7 +41,10 @@ public class IOPBlocks {
     }
 
     public static void registerItemGroup(String name, BOPBlockSet blockSet) {
-        Item icon = blockSet.getRandom().asItem();
+        List<Block> blocks = blockSet.getAll();
+
+        Block randomBlock = blocks.get(ThreadLocalRandom.current().nextInt(blocks.size()));
+        Item icon = randomBlock.asItem();
 
         Registry.register(
                 Registries.ITEM_GROUP,
