@@ -9,12 +9,14 @@
 
 ### 📖 About
 
-Integrations O' Plenty aims to add a few Biomes O' Plenty integrations for various Fabric mods for a more complete experience! The mod also features a modular configuration system, so you can disable parts you don't need. Currently, the mod adds Biomes O' Plenty variants for:
+Integrations O' Plenty aims to add Biomes O' Plenty integrations for various Fabric mods. The mod also features a modular configuration system, allowing you to disable parts of the mod you don't need. Currently, the mod adds Biomes O' Plenty variants for:
 
 - **Cabinets** from [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight-refabricated)
 - **Beehives** for mods like [More Beehive Variants](https://www.curseforge.com/minecraft/mc-mods/more-beehive-variants) or [Friends and Foes](https://www.curseforge.com/minecraft/mc-mods/friends-and-foes-forge)
 
+![assortment of cabinets and beehives from integrations o' plenty](https://i.imgur.com/hyDGVBh.png)
+
 ### 📜 Credits
 
-- Inspired by Compat O' Plenty from [tdstress](https://www.curseforge.com/members/tdstress).
+- Inspired by [Compat O' Plenty](https://www.curseforge.com/minecraft/mc-mods/compat-o-plenty) from [tdstress](https://www.curseforge.com/members/tdstress).
 - Textures by [MiteBeMana](https://www.curseforge.com/members/mitebemana)
