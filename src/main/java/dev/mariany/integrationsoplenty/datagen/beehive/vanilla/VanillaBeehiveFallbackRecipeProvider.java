@@ -1,4 +1,4 @@
-package dev.mariany.integrationsoplenty.datagen.vanilla;
+package dev.mariany.integrationsoplenty.datagen.beehive.vanilla;
 
 import dev.mariany.integrationsoplenty.datagen.MissingModuleRecipeProvider;
 import dev.mariany.integrationsoplenty.module.Modules;

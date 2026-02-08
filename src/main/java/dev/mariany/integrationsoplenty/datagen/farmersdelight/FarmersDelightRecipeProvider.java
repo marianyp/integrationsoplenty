@@ -1,7 +1,8 @@
-package dev.mariany.integrationsoplenty.datagen;
+package dev.mariany.integrationsoplenty.datagen.farmersdelight;
 
 import dev.mariany.integrationsoplenty.block.BOPWood;
 import dev.mariany.integrationsoplenty.block.type.farmersdelight.Cabinets;
+import dev.mariany.integrationsoplenty.datagen.ModuleRecipeProvider;
 import dev.mariany.integrationsoplenty.module.Modules;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Block;
@@ -49,10 +50,5 @@ public class FarmersDelightRecipeProvider extends ModuleRecipeProvider {
                     .offerTo(this.exporter);
             }
         };
-    }
-
-    @Override
-    public String getName() {
-        return "Integrations O' Plenty / Farmer's Delight Recipes";
     }
 }
