@@ -1,20 +1,21 @@
-package dev.mariany.integrationsoplenty.datagen;
+package dev.mariany.integrationsoplenty.datagen.beehive.vanilla;
 
-import dev.mariany.integrationsoplenty.block.BOPWood;
-import dev.mariany.integrationsoplenty.block.type.Beehives;
+import dev.mariany.integrationsoplenty.datagen.ModuleRecipeProvider;
 import dev.mariany.integrationsoplenty.module.Modules;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
-public class BeehivesRecipeProvider extends ModuleRecipeProvider {
-    public BeehivesRecipeProvider(
+public class VanillaBeehiveOverrideRecipeProvider extends ModuleRecipeProvider {
+    public VanillaBeehiveOverrideRecipeProvider(
             FabricDataOutput output,
             CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture
     ) {
@@ -29,28 +30,27 @@ public class BeehivesRecipeProvider extends ModuleRecipeProvider {
         return new RecipeGenerator(registryLookup, exporter) {
             @Override
             public void generate() {
-                this.createBeehiveRecipes();
-            }
+                Item honeyComb = Items.HONEYCOMB;
 
-            private void createBeehiveRecipes() {
-                Beehives.BLOCK_SET.forEach(this::createBeehiveRecipe);
-            }
-
-            private void createBeehiveRecipe(Block block, BOPWood wood) {
-                this.createShaped(RecipeCategory.DECORATIONS, block)
-                    .input('P', wood.getPlank())
-                    .input('H', Items.HONEYCOMB)
+                this.createShaped(RecipeCategory.DECORATIONS, Blocks.BEEHIVE)
+                    .input('P', Blocks.OAK_PLANKS)
+                    .input('H', honeyComb)
                     .pattern("PPP")
                     .pattern("HHH")
                     .pattern("PPP")
-                    .criterion(hasItem(Items.HONEYCOMB), this.conditionsFromItem(Items.HONEYCOMB))
+                    .criterion(hasItem(honeyComb), this.conditionsFromItem(honeyComb))
                     .offerTo(this.exporter);
             }
         };
     }
 
     @Override
+    protected Identifier getRecipeIdentifier(Identifier identifier) {
+        return Identifier.ofVanilla(identifier.getPath());
+    }
+
+    @Override
     public String getName() {
-        return "Integrations O' Plenty / Beehives Recipes";
+        return "Integrations O' Plenty Beehive Recipe Override";
     }
 }

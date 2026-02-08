@@ -37,4 +37,9 @@ public abstract class ModuleRecipeProvider extends FabricRecipeProvider {
                 this.withConditions(exporter, new ModuleResourceCondition(this.module))
         );
     }
+
+    @Override
+    public String getName() {
+        return this.module.id().getPath() + "/" + "Recipes";
+    }
 }
